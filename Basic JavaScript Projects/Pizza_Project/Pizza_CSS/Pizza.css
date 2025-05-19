@@ -1,0 +1,124 @@
+/* Base Styles */
+body {
+    background-color: #fff5f5; /* Light red background for the body */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; /* Default text color for divs */
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading Styles */
+h1 {
+    font-family: 'Pacifico', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d32f2f; /* Pizza red color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Roboto Condensed', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5d4037; /* Brownish color for contrast */
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffcdd2; /* Light red border */
+}
+
+/* Div Styles */
+div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; /* Dark gray for readability */
+}
+
+/* Menu Container */
+#menuBG {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+#frmMenu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left, .right {
+    width: calc(50% - 10px);
+    height: auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Button Styles */
+#btnOrder {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 45px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btnOrder:hover {
+    background-color: #b71c1c;
+}
+
+/* Cart Styles */
+#cart {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#showText, #totalPrice {
+    flex: 1;
+    min-width: 200px;
+    height: auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Inputs */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #d32f2f;
+}
+
+.size, .toppings {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .left, .right {
+        width: 100%;
+    }
+    
+    #menuBG {
+        width: 95%;
+        padding: 15px;
+    }
+}

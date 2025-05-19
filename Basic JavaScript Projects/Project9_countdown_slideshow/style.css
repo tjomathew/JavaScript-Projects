@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+#countdown {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333;
+}
